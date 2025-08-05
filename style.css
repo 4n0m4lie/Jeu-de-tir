@@ -1,0 +1,58 @@
+/*Police d'écriture*/
+
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-color: #8a6be0;
+}
+
+.game_infos {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.container {
+    height: 400px;
+    width: 500px;
+    border:1px solid #dfdde0;
+    cursor: crosshair;
+    position: relative;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #d49fc7;
+    box-shadow: 0 0 5px rgba(224, 63, 176, 0.1);
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+#target {
+    height: 60px;
+    width: 60px;
+    position: absolute;
+    transition: 0.25s;
+    animation: animateTarget 10s infinite;
+}
+
+button {
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    background-color: #d49fc7;
+    border:0;
+    color:antiquewhite;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+@keyframes animateTarget {
+    to { 
+       transform: translateY(-200PX) rotate(90deg); 
+    }
+}
