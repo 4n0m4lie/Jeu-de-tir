@@ -1,6 +1,5 @@
 /*Police d'écriture*/
 
-
 body {
     display: flex;
     align-items: center;
@@ -31,6 +30,11 @@ body {
     box-shadow: 0 0 5px rgba(224, 63, 176, 0.1);
     border-radius: 6px;
     overflow: hidden;
+    /* Désactiver la sélection de texte */
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }
 
 #target {
@@ -39,6 +43,10 @@ body {
     position: absolute;
     transition: 0.25s;
     animation: animateTarget 10s infinite;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }
 
 button {
